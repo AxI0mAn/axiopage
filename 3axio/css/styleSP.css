@@ -238,10 +238,10 @@ filter {
 
 .nav_SP {
   position: fixed;
-  top: 4vmin;
-  left: 4vmin;
-  width: 10vmin;
-  height: 10vmin;
+  top: 0vmin;
+  left: 0vmin;
+  width: 12vmin;
+  height: 12vmin;
 }
 
 .start_click {
@@ -250,10 +250,10 @@ filter {
   cursor: pointer;
   backface-visibility: hidden;
   position: absolute;
-  top: 0%;
-  left: 0%;
-  background-color: rgba(2, 2, 22, 0.1);
-  border: 0.1px dotted rgba(2, 2, 22, 0.1);
+  top: 0vmin;
+  left: 0vmin;
+  background-color: rgba(2, 2, 22, 0.01);
+  border: 0.1px dotted rgba(2, 2, 22, 0.01);
   border-radius: 25%/50%;
   -webkit-border-radius: 25%;
   -moz-border-radius: 25%;
@@ -266,6 +266,9 @@ filter {
 }
 
 .burger {
+  position: absolute;
+  top: 2vmin;
+  left: 2vmin;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -1081,7 +1084,6 @@ header {
     grid-template-areas: "h1 paragraf" "h1 paragraf";
   }
 }
-
 @media screen and (max-width: 500px) {
   header {
     margin-left: 25vw;
