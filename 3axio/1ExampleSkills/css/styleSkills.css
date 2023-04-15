@@ -958,8 +958,8 @@ body {
   height: 130vh;
   background-image: url(../../content/book.png);
   background-size: 100% 100%;
-  animation: anim_nav_Components 2s linear 7s 1 normal forwards, book_face 3s linear 10s 1 normal forwards;
-  -webkit-animation: anim_nav_Components 2s linear 7s 1 normal forwards, book_face 3s linear 10s 1 normal forwards;
+  animation: anim_nav_Components 2s linear 5s 1 normal forwards, book_face 3s linear 6s 1 normal forwards;
+  -webkit-animation: anim_nav_Components 2s linear 5s 1 normal forwards, book_face 3s linear 6s 1 normal forwards;
 }
 .book_face p {
   text-shadow: -4px -4px 4px rgb(72, 34, 9), 4px 4px 4px rgb(0, 0, 0);
@@ -1146,10 +1146,14 @@ body {
     margin-top: -4vh;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .post {
     margin-top: -4vh;
     margin-left: 2vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
   }
 }
 
