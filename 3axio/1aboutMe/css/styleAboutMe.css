@@ -121,9 +121,9 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(rgba(7, 81, 255, 0.7) 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background: radial-gradient(rgba(7, 81, 255, 0.7) 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 1.2vmin 1.2vmin, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
   background-color: rgb(2, 2, 20);
-  background-size: 5px 5px;
+  background-size: 1vmin 1vmin;
 }
 
 .wrapper {
@@ -371,6 +371,15 @@ article {
   }
 }
 
+@media screen and (max-height: 531px) {
+  .article_block {
+    overflow: visible;
+    flex-direction: column;
+    width: 100%;
+    height: 120vh;
+  }
+}
+
 .article_box {
   border: 1.5px solid rgba(0, 233, 33, 0.75);
   width: 5%;
@@ -520,6 +529,12 @@ article {
   }
 }
 
+@media screen and (max-height: 531px) {
+  .active > .article_page_title > p {
+    margin-top: -3vh;
+  }
+}
+
 .article_page_title > p {
   visibility: hidden;
 }
@@ -553,9 +568,19 @@ article {
   }
 }
 
+@media screen and (max-height: 531px) {
+  .article_page > p {
+    margin-top: 0.1rem;
+    font-size: calc(1vw + 0.3rem);
+    letter-spacing: 0.7vw;
+    line-height: 3vh;
+    margin-left: 2vw;
+  }
+}
+
 #scroll_article_block_SS > .article_page,
 #scroll_article_block_HS > .article_page {
-  width: 70vw;
+  width: 80vw;
   margin-left: 5vw;
 }
 
@@ -613,8 +638,21 @@ article {
     margin-right: 1rem;
     margin-top: 0.5rem;
     letter-spacing: 1vw;
-    line-height: 2.5vw;
+    line-height: 2vw;
+    font-weight: 400;
     font-size: calc(1vw + 0.5rem);
+  }
+}
+
+@media screen and (max-height: 531px) {
+  #scroll_article_block_SS > .article_page > span,
+#scroll_article_block_HS > .article_page > span {
+    width: 80vw;
+    margin-top: 0.1rem;
+    font-size: calc(1vw + 0.3rem);
+    letter-spacing: 0.7vw;
+    line-height: 3vh;
+    margin-left: 2vw;
   }
 }
 
