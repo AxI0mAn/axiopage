@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AxI0man_Works</title>
+  <link rel="stylesheet" href="css/styleMW.css">
+
+  <link rel="shortcut icon" href="../content/fenit.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  
+  <script src="../js/openMenuMW.js"></script>
+</head>
+<body>   
+  <div class="wrapperMW">
+    <div class="container_mouse">
+      <div id="mouseMove">
+      </div>
+      <div class="background">
+        <div class="bg-animation">
+          <div id="stars"></div>
+          <canvas id="space"></canvas>  
+        </div>
+      </div>
+    </div>
+
+    <div class="caruselMW ">
+      <div id="drag-container">
+        <div id="spin-container">
+          <!--foto -->
+          <img data-src="../content/screen.png" src="../content/screen.png"  alt="startscreen">
+          <img data-src="../content/screen.png" src="../content/screen.png"  alt="startscreen">
+          <img data-src="../content/screen.png" src="../content/screen.png"  alt="startscreen">
+          <img data-src="../content/screen.png" src="../content/screen.png"  alt="startscreen">
+          <img data-src="../content/screen.png" src="../content/screen.png"  alt="startscreen">
+          <img data-src="../content/screen.png" src="../content/screen.png"  alt="startscreen">
+          <img data-src="../content/screen.png" src="../content/screen.png"  alt="startscreen">
+          <!--video 
+          <video controls autoplay="autoplay" loop>
+            <source src="img/оригами.mp4" type="video/mp4">
+          </video>-->
+          <!--<p>Site Map</p>-->
+        </div>
+        <div id="ground"></div>
+      </div>
+    </div>
+
+    
+
+    <div class="contentMW">
+      <div class="welcome_text">
+        <span translate="no">m</span><span translate="no">y</span><span>&nbsp;</span>
+        <span translate="no">l</span><span translate="no">a</span><span translate="no">t</span><span translate="no">e</span><span translate="no">s</span><span translate="no">t</span>&nbsp;
+        <span translate="no">s</span><span translate="no">i</span><span translate="no">t</span><span translate="no">e</span><span translate="no">s</span><br>
+      </div>
+    </div>
+
+    <header class="header_block">
+      <div class="header_conteiner">
+        <a href="../index.html"  target="_blank" title="Home Page"  class="button_do" translate="no">HOME PAGE</a>
+        <a href="../content/CV_front-end_Dmitry_Mikhailovich_ddddaxio@gmail.com.pdf"   target="_blank" title="Download my CV.pdf" class="button_do" translate="no"> DOWMLOAD CV.pdf </a>
+      </div>
+    </header>
+    
+    <article>
+      <nav  class="nav_Portfolio">
+        <button onclick="openLP()" class="start_click" translate="no" >Landing Page</button>
+        <button onclick="openCS()" class="start_click" translate="no">Catalog and Shop</button>
+        <button onclick="openIS()" class="start_click" translate="no">Information site</button>
+        <button onclick="openOther()" class="start_click" translate="no">Other sites</button>
+      </nav>
+
+      <div id="openLanding" class="start_button-content">        
+        <div class="Portfolio">
+          <button onclick="openLP()" class="close" translate="no">Close</button>
+          <!--from home page-->
+          <div class="item">            
+            <h3 class="from_news">My fierst site.</h3>
+            <a href="../../1white/index.html" target="_blank" title="Home_Page"><img src="../content/logo_now.png" data-src="../content/news1/white.jpg" alt="whitescreen"></a>
+            <span>The creation of the site took five days - from the idea to the finished result. The site was created without the use of JavaScript, so the function of changing the language and color theme is made by links. Only knowledge of HTML and CSS (SASS) was used. Grid, Flex and JavaScript have not yet been explored.</span>
+          </div>
+          <!--from home page-->
+        </div>        
+      </div>
+
+      <div id="openCatalog" class="start_button-content">
+        <div class="Portfolio">
+          <button onclick="openCS()" class="close" translate="no">Close</button>
+
+          <!--from home page-->
+          <div class="item">            
+            <h3 class="from_news">Catalog html tegs</h3>
+            <a href="../../2citrus/index.html" target="_blank" title="Home_Page"><img src="../content/logo_now.png" data-src="../content/news2/CFS.jpg" alt="CFSscreen"></a>
+            <span>This site was created to consolidate the material I have covered about the properties of flex containers and flex items. Made in the form of a catalog with thematic sections. Double-sided cards with flip animation.</span>
+          </div>
+          <!--from home page-->
+
+        
+        </div>
+      </div>
+
+      <div id="openInfoSite" class="start_button-content">
+        <div class="Portfolio">
+          <button onclick="openIS()" class="close" translate="no">Close</button>
+
+
+                  
+        
+        </div>
+      </div>
+
+      <div id="openOtherSites" class="start_button-content">
+        <div class="Portfolio">
+          <button onclick="openOther()" class="close" translate="no">Close</button>
+
+
+                  
+        
+        </div>
+      </div>
+    </article>
+  </div>
+
+
+
+  <script src="../js/lazy-load.js"></script>
+  <script src="../js/scriptCarouselMW.js"></script>
+  <script src="../js/mouseBlur.js"></script>  
+  
+  <script >
+    (function ($) {
+  function generateStar(canvas, ctx, starRadius) {
+    ctx.beginPath();
+    ctx.arc(
+      starRadius + Math.random() * canvas.width,
+      starRadius + Math.random() * canvas.height,
+      starRadius * Math.random(),
+      0,
+      Math.PI * 2,
+      false
+    );
+    //ctx.arc(100, 30, starRadius, 0, Math.PI*2, false);
+
+    var rand = Math.random();
+    if (rand <= 0.3) {
+      ctx.fillStyle = 'rgba(255,255,255, 1)';
+      ctx.shadowColor = 'rgba(205, 205, 205, 0.5)';
+      ctx.shadowBlur = 0.2;
+    } else if (rand <= 0.5 && rand > 0.3) {
+      ctx.fillStyle = 'rgba(100, 40, 250, 1)';
+      ctx.shadowColor = 'rgba(105, 50, 200, 0.5)';
+      ctx.shadowBlur = 0.3;
+    } else if (rand > 0.5 && rand <= 0.8) {
+      ctx.fillStyle = 'rgba(0, 200, 196, 1)';
+      ctx.shadowColor = 'rgba(0, 190, 100, 0.5)';
+      ctx.shadowBlur = 0.5;
+    } else {
+      ctx.fillStyle = 'rgba(200, 255, 0, 1)';
+      ctx.shadowColor = 'rgba(100, 255, 0, 0.75)';
+      ctx.shadowBlur = 0.4;
+    }
+    ctx.fill();
+  }
+
+  $(function () {
+    var canvas = document.getElementById('space');
+    var context = canvas.getContext('2d');
+
+    onresize = function () {
+      canvas.width = 2000 + canvas.clientWidth;
+      canvas.height = 2000 + canvas.clientHeight;
+    };
+    onresize();
+
+    interval = setInterval(function (interval) {
+      generateStar(canvas, context, 0.75);
+    }, 10); 
+
+    setTimeout(
+      function () {
+        clearInterval(interval);
+      },
+      10000 
+    );
+  });
+
+})(jQuery);
+  </script>
+
+</body>
+</html>

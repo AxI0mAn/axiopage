@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+article .hardskill #Avocode, article .hardskill #Figma, article .hardskill #Blender, article .hardskill #Corel, article .hardskill #PS, article .hardskill #Python, article .hardskill #NodeJS, article .hardskill #JS, article .hardskill #CSS, article .hardskill #HTML, article .hardskill #Copywrite, article .hardskill #Design, article .hardskill #English {
+  font-size: 80%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #80abcd;
+  background-image: linear-gradient(90deg, #fff7fb, #efeaf4, #dbdaeb, #bfc9e2, #9cb9d9, #72a8cf, #4494c3, #1b7db6, #0668a1);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+figure, #sectionAboutMe, #Portfolio .slide, #Portfolio a img, .Portf, aside, article, .aboutsite {
+  background-color: rgb(226, 233, 255);
+  border: 2px solid rgba(129, 159, 247, 0.731);
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px 2px rgb(129, 159, 247);
+}
+
+body {
+  background: rgba(240, 240, 240, 0.9);
+  background: url(../img/backgr.jpg);
+  background-attachment: fixed;
+  background-repeat: round;
+  background-position: top center;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  font-weight: 555;
+  text-decoration: underline 2px;
+}
+
+#topheader {
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  line-height: 40px;
+}
+#topheader nav .navbutton {
+  color: #777;
+  font-weight: 777;
+  height: 25px;
+  padding: 3px 10px;
+  margin: 5px 10px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 20px;
+  box-shadow: 0 7px rgb(200, 200, 200);
+}
+#topheader nav button:hover {
+  color: rgb(129, 159, 247);
+  border: 1px solid rgb(129, 159, 247);
+  border-radius: 20px;
+  box-shadow: 0 5px rgb(129, 159, 247);
+}
+#topheader nav button:active {
+  color: rgb(129, 159, 247);
+  box-shadow: 0 2px rgb(129, 159, 247);
+  transform: translateY(3px);
+}
+
+.aboutsite {
+  height: max-content;
+  width: 90%;
+  margin: 10px auto 10px 5%;
+}
+.aboutsite h1 {
+  font-size: large;
+  margin: 10px 20px 0px 20px;
+}
+.aboutsite p {
+  margin: 0 10px;
+  padding: 0 5px 5px 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-size: medium;
+  text-align: justify;
+  text-indent: 12px;
+}
+
+section {
+  display: table;
+  height: fit-content;
+  width: 80%;
+  margin: 10px auto;
+  border-spacing: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section #row {
+  display: table-row;
+}
+
+article {
+  display: table-cell;
+  width: 50%;
+  height: fit-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+article #b-t-l-r {
+  border-top-left-radius: 20px;
+}
+article #b-b-l-r {
+  border-bottom-left-radius: 20px;
+}
+article .hardskill {
+  width: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 1px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: right;
+}
+article .hardskill #English {
+  width: 52%;
+  border-top-left-radius: 20px;
+}
+article .hardskill #Design {
+  width: 64%;
+}
+article .hardskill #Copywrite {
+  width: 67%;
+}
+article .hardskill #HTML {
+  width: 60%;
+}
+article .hardskill #CSS {
+  width: 52%;
+}
+article .hardskill #JS {
+  width: 18%;
+}
+article .hardskill #NodeJS {
+  width: 15%;
+}
+article .hardskill #Python {
+  width: 17%;
+}
+article .hardskill #PS {
+  width: 37%;
+}
+article .hardskill #Corel {
+  width: 78%;
+}
+article .hardskill #Blender {
+  width: 47%;
+}
+article .hardskill #Figma {
+  width: 40%;
+}
+article .hardskill #Avocode {
+  width: 70%;
+  border-bottom-left-radius: 20px;
+}
+
+aside {
+  display: table-cell;
+  height: max-content;
+  width: fit-content;
+  margin: 3px;
+  padding: 10px 20px;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 25px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+aside h2 {
+  text-align: right;
+}
+aside ul li {
+  margin: 0 0 5px 0;
+  background: url(../img/liSS.png) left no-repeat;
+  padding: 0 0 0 20px;
+  text-decoration: underline 3px dotted rgba(184, 219, 124, 0.7);
+}
+
+.decor {
+  width: 100%;
+  height: fit-content;
+}
+
+.Portf {
+  margin: 0 2%;
+  text-align: center;
+  height: max-content;
+  width: 96%;
+  border-radius: 0px;
+}
+
+#Portfolio {
+  overflow: auto;
+  margin: 0 5px;
+  text-align: center;
+  height: max-content;
+}
+#Portfolio #tablePortfolio {
+  display: table;
+  border-spacing: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 777;
+}
+#Portfolio a {
+  color: #000;
+}
+#Portfolio a img {
+  padding-bottom: 10px;
+  border: 0px solid;
+  box-shadow: none;
+}
+#Portfolio #rowPortfolio {
+  display: table-row;
+}
+#Portfolio .slide {
+  display: table-cell;
+  padding-bottom: 10px;
+}
+
+#sectionAboutMe {
+  clear: left;
+  padding: 3px 5px;
+  margin: 20px 2% 20px auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-size: medium;
+  text-align: justify;
+  text-indent: 12px;
+  height: 400px;
+  overflow: auto;
+  max-width: 70%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#sectionAboutMe h2 {
+  text-align: center;
+  font-weight: 555;
+  padding-bottom: 4px;
+}
+#sectionAboutMe p {
+  padding: 5px;
+}
+#sectionAboutMe em {
+  font-weight: 555;
+  text-decoration: underline;
+}
+#sectionAboutMe .list {
+  margin: 0 0 10px 0;
+}
+#sectionAboutMe .list li {
+  margin: 0 0 5px 0;
+  background: url(../img/li.png) left no-repeat;
+  padding: 0 0 0 20px;
+  text-decoration: underline 2px dotted rgba(231, 120, 23, 0.854);
+}
+
+footer {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+  height: 50px;
+  width: fit-content;
+  line-height: 20px;
+}
+footer span {
+  font-size: large;
+  color: rgb(75, 75, 75);
+  padding: 7px;
+}
+footer a {
+  color: rgb(75, 75, 75);
+  padding: 7px;
+}
+footer .buttonFutter {
+  color: rgb(200, 200, 200);
+  width: auto;
+  padding: 10px;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(100, 100, 100);
+}
+footer .buttonFutter :hover {
+  color: rgb(129, 159, 247);
+  border: 1px solid rgb(219, 245, 252);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(129, 159, 247);
+  font-weight: 555;
+}
+footer :hover {
+  border: 1px solid rgb(219, 245, 252);
+  box-shadow: 5px 5px 10px 5px rgb(129, 159, 247);
+}
+
+figure {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  width: 225px;
+  height: 400px;
+}

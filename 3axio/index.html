@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AxI0man</title>
+
+  <link rel="stylesheet" href="css/styleSP.css">
+  <link rel="shortcut icon" href="fenit.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+  <script src="js/openMenuHome.js"></script>
+</head>
+<body>
+  <div class="wrapperSP">
+    <div class="container_mouse">
+      <div id="mouseMove">
+      </div>
+      <div class="background">
+        <div class="bg-animation">
+          <div id="stars"></div>
+          <canvas id="space"></canvas>  
+        </div>
+      </div>
+    </div>
+    <header>
+      <h1 translate="no">
+        let's make the future together
+      </h1>
+      <div class="epigraph_p">
+        <svg class="epigraph_cont" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" >
+          <g >
+            <path class="fil0 str0" d="M4.60223 105.641l4.87998 4.71508 4.63257 4.47676 276.972 0 1.20943 -1.25771 8.58629 -73.6421 -6.25443 -5.82948 0 -33.0313 -25.3185 0 0 33.0313 -6.88334 5.02162 -236.315 0.0903 -3.77017 3.34051 -6.90045 0.0123941 -10.8387 10.529 0 52.5406 0 0.00306902zm147.703 -64.8237l-7.33932 0 -6.26422 3.06654 7.34216 0 6.26139 -3.06654zm16.1998 3.06571l-14.6817 0 6.26186 -3.06501 14.682 0 -6.2621 3.06501zm22.4635 0l-14.6818 0 6.2621 -3.06501 14.6817 0 -6.26198 3.06501zm-52.1405 -3.06571l-3.66984 0 -6.26411 3.06654 3.66984 0 6.26411 -3.06654zm-8.98479 0l-3.66984 0 -6.26411 3.06654 3.66984 0 6.26411 -3.06654zm-9.00439 0l-3.66972 0 -6.26411 3.06654 3.66972 0 6.26411 -3.06654zm-8.98479 0l-3.66984 0 -6.26411 3.06654 3.66984 0 6.26411 -3.06654zm-9.00439 0l-3.66972 0 -6.26411 3.06654 3.66972 0 6.26411 -3.06654zm-8.98479 0l-3.66984 0 -6.26411 3.06654 3.66984 0 6.26411 -3.06654zm-9.00439 0l-3.66972 0 -6.26411 3.06654 3.66972 0 6.26411 -3.06654zm-8.98479 0l-3.66984 0 -6.26411 3.06654 3.66984 0 6.26411 -3.06654zm-69.6358 64.1233l4.16549 4.02537 3.95538 3.82152 274.706 0 1.03367 -1.07404 0 -70.4666 -19.6227 0 -5.87623 4.28695 -249.107 -0.113554 -9.25262 8.98939 0 50.5294 -0.00153451 0.00153451z"/>
+            <polygon class="fil01" points="6.23979,104.941 10.4053,108.966 14.3607,112.788 289.066,112.788 290.1,111.714 290.1,41.2472 270.477,41.2472 264.601,45.5341 15.4939,45.4205 6.24132,54.4099 6.24132,104.939 "/>
+            <polygon class="fil02" points="190.968,43.8833 176.287,43.8833 182.549,40.8183 197.23,40.8183 "/>
+            <polygon class="fil03" points="168.505,43.8833 153.823,43.8833 160.085,40.8183 174.767,40.8183 "/>
+            <polygon class="fil04" points="152.305,40.8176 144.966,40.8176 138.702,43.8841 146.044,43.8841 "/>
+            <polygon class="fil05" points="138.828,40.8176 135.158,40.8176 128.894,43.8841 132.564,43.8841 "/>
+            <polygon class="fil06" points="129.843,40.8176 126.173,40.8176 119.909,43.8841 123.579,43.8841 "/>
+            <polygon class="fil07" points="120.839,40.8176 117.169,40.8176 110.905,43.8841 114.575,43.8841 "/>
+            <polygon class="fil08" points="111.854,40.8176 108.184,40.8176 101.92,43.8841 105.59,43.8841 "/>
+            <polygon class="fil09" points="102.85,40.8176 99.1799,40.8176 92.9157,43.8841 96.5855,43.8841 "/>
+            <polygon class="fil10" points="93.8648,40.8176 90.1951,40.8176 83.931,43.8841 87.6007,43.8841 "/>
+            <polygon class="fil11" points="84.8604,40.8176 81.1907,40.8176 74.9266,43.8841 78.5963,43.8841 "/>
+            <polygon class="fil12" points="75.8756,40.8176 72.2059,40.8176 65.9418,43.8841 69.6115,43.8841 "/>
+          </g>
+          <text class="epigraph_text" x="35" y="70" >        This site demonstrates       </text>
+          <text class="epigraph_text" x="25" y="90" >        my skills in front_end.      </text>
+          <text class="epigraph_textIam" x="25" y="100" >I am a ...       </text>
+          <text class=" epigraph_textA " x="120" y="100" > human....       </text>
+          <text class=" epigraph_textB " x="120" y="100" > creative engineer....       </text>
+          <text class=" epigraph_textC " x="120" y="100" >  process analyst ...      </text>
+          <text class=" epigraph_textD " x="120" y="100" >     inventor....   </text> 
+        </svg>
+      
+      </div>
+           
+    </header>
+    
+    <div class="contentSP">
+      <div class="welcome_text">
+        <svg>
+          <filter id=lightA3>
+            <feGaussianBlur in='SourceAlpha' stdDeviation='3' result='B' />
+            <feSpecularLighting in='B' specularExponent='128' result='S'>
+              <feDistantLight azimuth='225' elevation='70' />
+            </feSpecularLighting>
+            <feComposite in='S' in2='SourceAlpha' operator='in' result='L' />
+            <feComposite in='SourceGraphic' in2='L' operator='arithmetic' k2='1' k3='1' />
+          </filter>
+          <filter id=in-and-out>
+            <feGaussianBlur stdDeviation='4' in='SourceAlpha' />
+            <feOffset result='fO' dy='5' dx='5' />
+            <feComposite in2='fO' operator='xor' in='SourceGraphic' />
+          </filter>
+        </svg>
+        <p class="welcome_text_p" data-text='Welcome to my page' translate="no">Welcome to my page</p>  
+      </div>
+    </div>
+
+	  <div class="annotation"> 
+      <p> Greetings! I am Dmitry. <br> <br>
+        I like to create websites and components for them. Solving related tasks and problems. When creating sites, I use the principles of cross-browser compatibility and adaptability of sites. The semantic layout and clear structure of the site facilitate its maintenance and scalability. Combining animation with gradual loading of content allows you to make the site attractive. In my work I use HTML, CSS, SASS, JavaScript, SVG. In addition, I study ReactJS, follow new trends in website design and technologies that improve their functionality for users. I experimenting and find non-standard and interesting solutions. The greatest interest for me is animations and everything connected with them. I am sure, that with the development of web3 and 5G-technologies, interface animations will be a very popular niche in the near future.</p>
+        
+        <video class="video_menu" controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source src="content/homePage.mp4" type="video/mp4">
+          <source src="content/homePage.webm" type="video/webm">
+        </video>
+        
+        <p>In the upper left corner of the site, there is a stylized menu button that opens access to a page with my work and a page with examples of ready-made components for websites. This is far from a complete volume, because Not all customers give their permission for publication. I hope that this is enough to assess my current professional level and quality of work, to understand the speed and intensity of development. There is a separate page with brief information about me and my skills. In addition, you can download my resume (CV) with a photo and write me an email or LinkedIn.</p>
+        <video controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source src="content/about.mp4" type="video/mp4">
+          <source src="content/about.webm" type="video/webm">
+        </video>
+        <video controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source src="content/portfolio.mp4" type="video/mp4">
+          <source src="content/portfolio.webm" type="video/webm">
+        </video>
+
+        <p>This multi-page site and its design were created by me. It was conceived as a portfolio, but as a result of creative inspiration and a certain amount of time, it turned into a full-fledged personal page of a website layout designer. Like other sites, it is designed to be responsive and cross-platform. The work of pages with examples of sites and components is made using JavaScript, which made it possible to open directories inside the pages without reloading. Special attention was paid to the visual design of the pages. For example, the components  page is styled like a recipe book, while the about me page uses a simple yet responsive and functional slider to group information into sections. There is no limit to perfection, so gradually this page will be supplemented with new components and functions to bring it closer to the ideal visual and functional state. For example, add an already created form for communication using PHP or NodeJS.</p>
+
+        <video class="lazy" controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source data-src="content/form.mp4" type="video/mp4" src="content/poster.jpg">
+          <source data-src="content/form.webm" type="video/webm" src="content/poster.jpg">
+        </video>
+
+        
+        <video class="lazy" controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source data-src="content/components.mp4" type="video/mp4" src="content/poster.jpg">
+          <source data-src="content/components.webm" type="video/webm" src="content/poster.jpg">
+        </video>
+        <p>Currently, I'm interested in practicing and learning JavaScript and ReactJS.
+          I am ready to answer your questions and suggestions. I will be grateful for constructive criticism of my work and feedback. Have fun with work my page.</p>
+
+    </div>
+    
+    <main class="main_SP">
+              
+      <h3 >My last works.</h3>
+
+
+      <article class="post"> 
+        <!--video-->
+        <video class="from_blog_video lazy" controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source data-src="content/post1/video_021.mp4" type="video/mp4" src="content/poster.jpg">
+          <source data-src="content/post1/video_021.webm" type="video/webm" src="content/poster.jpg">
+        </video>   
+        <!--header post1-->
+        <div class="post_description">
+          <h3 class="from_blog_header">Customizable background.</h3>
+          <!--icons applied technologies from this post-->
+          <div class="icons_technologies">
+            <span class="ico_html"></span>
+            <span class="ico_css"></span>
+            <span class="ico_js"></span>
+          </div>
+          <!--post title-->
+          <p class="from_blog_p">when the site is completely ready, we can choose a background that is ideal for the content. In the same way, you can adjust the color scheme for other elements of the page so that the site looks perfect.</p>
+          <!--BUTTON download code -> GOTO FORM -> GOTO GOOGLE DISK-->
+          <a class="exit_download_code" href="404.html"  translate="no">download code</a>
+        </div>
+      </article>
+
+
+
+      <article class="post box">
+        <!--video-->
+        <video class="from_blog_video lazy" controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source data-src="content/post1/video_016.mp4" type="video/mp4" src="content/poster.jpg">
+          <source data-src="content/post1/video_016.webm" type="video/webm" src="content/poster.jpg">
+        </video>
+        <!--header post1-->
+        <div class="post_description">
+          <h3 class="from_blog_header">Burger-menu, with aluminium buttons.</h3>
+          <!--icons applied technologies from this post-->
+          <div class="icons_technologies">
+            <span class="ico_html"></span>
+            <span class="ico_css"></span>
+          </div>
+          <!--post title-->
+          <p class="from_blog_p">button variations. what they can be.</p>
+          <!--BUTTON download code -> GOTO FORM -> GOTO GOOGLE DISK-->
+          <a class="exit_download_code" href="404.html"  translate="no">download code</a>
+        </div>
+      </article>
+
+      <article class="art_work box">
+<!--PASTE ONLY HTML-->
+        <!--from home page-->
+        <div class="item">            
+          <h3 class="from_news">Catalog html tegs</h3>
+          <a href="../2citrus/index.html" target="_blank" title="Home_Page"><img src="content/logo_now.png" data-src="content/news2/CFS.jpg" alt="logo_now"></a>
+          <span>This site was created to consolidate the material I have covered about the properties of flex containers and flex items. Made in the form of a catalog with thematic sections. Double-sided cards with flip animation. When writing, the BEM methodology was used. This site has been successfully validated by validator.w3.org, but I don't like too many classes in code.</span>
+        </div>
+        <!--from home page-->
+      </article>
+      
+      <article class="post box"> 
+        <!--video-->
+        <video class="from_blog_video lazy" controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source data-src="content/post1/video_018.mp4" type="video/mp4" src="content/poster.jpg">
+          <source data-src="content/post1/video_018.webm" type="video/webm" src="content/poster.jpg">
+        </video>
+        <!--header post1-->
+        <div class="post_description">
+          <h3 class="from_blog_header">Burger menu with the effect of smooth appearance of buttons.</h3>
+          <!--icons applied technologies from this post-->
+          <div class="icons_technologies">
+            <span class="ico_html"></span>
+            <span class="ico_css"></span>
+            <span class="ico_blender"></span>
+          </div>
+          <!--post title-->
+          <p class="from_blog_p">Buttons in the color theme of the site. Background image created in blender 2.74</p>
+          <!--BUTTON download code -> GOTO FORM -> GOTO GOOGLE DISK-->
+          <a class="exit_download_code" href="404.html"  translate="no">download code</a>
+        </div>
+      </article>
+
+      <article class="post"> 
+        <!--video-->
+        <video class="from_blog_video lazy" controls="controls" preload="none" autoplay muted loop playsinline poster="content/poster.jpg">
+          <source data-src="content/post1/video_025.mp4" type="video/mp4"  src="content/poster.jpg">
+          <source data-src="content/post1/video_025.webm" type="video/webm" src="content/poster.jpg">
+        </video>
+        <!--header post1-->
+        <div class="post_description">
+          <h3 class="from_blog_header">Change photo color using SVG as mask.</h3>
+          <!--icons applied technologies from this post-->
+          <div class="icons_technologies">
+            <span class="ico_html"></span>
+            <span class="ico_css"></span>
+            <span class="ico_js"></span>
+            <span class="ico_svg"></span>
+          </div>
+          <!--post title-->
+          <p class="from_blog_p">This will help the user to choose the color of the purchased product.</p>
+          <!--BUTTON download code -> GOTO FORM -> GOTO GOOGLE DISK-->
+          <a class="exit_download_code" href="404.html"  translate="no">download code</a>
+        </div>
+      </article>
+
+      <article class="art_work box">       
+          <!--from home page-->
+        <div class="item">            
+          <h3 class="from_news">My fierst site.</h3>
+          <a href="../1white/index.html" target="_blank" title="Home_Page"><img src="content/logo_now.png" data-src="content/news1/white.jpg" alt="logo_now"></a>
+          <span> The site was created without the use of JavaScript. Only knowledge of HTML and CSS (SASS) was used. Grid, Flex and JavaScript have not yet been explored. This is the first site, so the code is terrible. I saved and posted it for memory in order to understand my my learning progress from coding.</span>
+        </div>
+        <!--from home page-->
+      </article>
+
+    </main>
+
+    <nav class="nav_SP start_button">
+        <svg class="burger" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="55px" height="50px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 55 50.045">
+          <g >
+            <path class="fil05" d="M27.8299 30.9587c2.98675,0 5.40893,-2.49105 5.40893,-5.56273 0,-3.07168 -2.42218,-5.56273 -5.40893,-5.56273 -2.98675,0 -5.40893,2.49105 -5.40893,5.56273 0,3.07168 2.42218,5.56273 5.40893,5.56273zm0 -1.10991c2.39086,0 4.32974,-1.99397 4.32974,-4.45282 0,-2.45885 -1.93887,-4.45292 -4.32974,-4.45292 -2.39086,0 -4.32974,1.99407 -4.32974,4.45292 0,2.45885 1.93887,4.45282 4.32974,4.45282z"/>
+            <path class="fil101" d="M19.0629 24.0191c0.231198,-0.269252 0.710441,-0.208703 1.32882,0.036964l0 2.67964c-0.618378,0.245568 -1.09762,0.306117 -1.32882,0.0368649l0 -2.75347z"/>
+            <path class="fil101" d="M10.7305 20.5542l3.54616 0c0.233676,-0.998225 0.57745,-1.90389 1.16313,-2.60601l2.94929 1.73017c0.405811,0.312261 0.108216,0.525919 -0.893081,0.640874l-1.41236 -0.640874c-0.523045,0.93827 -0.816081,2.01439 -0.955414,3.18277l-1.84859 0.0641171c-0.233973,1.54595 -0.233973,3.39533 0,4.94118l1.84859 0.0641171c0.139333,1.16838 0.432369,2.2445 0.955414,3.18277l1.41236 -0.640775c1.0013,0.114856 1.29889,0.328514 0.893081,0.640775l-2.94929 1.73027c-0.585676,-0.702117 -0.92945,-1.60788 -1.16313,-2.60611l-3.54616 0c-1.03559,-2.23617 -1.03559,-7.4471 0,-9.68327z"/>
+            <path class="fil100" d="M28.5063 35.7578l0.158261 2.99458c2.41723,-0.239423 4.48067,-1.10714 6.34581,-2.32734l-3.08941 -4.79342 1.88457 -1.96068 11.3969 7.79702c1.07423,-1.45864 1.94948,-3.29732 2.68856,-5.39624l2.60185 0.0891892 4.5098 4.77192 -8.41252 0.0445946 -1.90805 2.76496 -3.7726 -3.21101 -2.29831 2.4975 3.05156 3.90351 -3.54676 2.39384 1.71798 3.1346 -3.87923 1.70986 -1.66259 -1.65287 0 -2.5077c1.94532,-0.586369 3.61573,-1.52613 5.20934,-2.56468l-3.65765 -5.81345c-4.83633,3.51683 -11.2708,3.51683 -16.1072,0l-3.65765 5.81345c1.59351,1.03856 3.26403,1.97832 5.20934,2.56468l0 2.5077 -1.66259 1.65287 -3.87923 -1.70986 1.71798 -3.1346 -3.54676 -2.39384 3.05156 -3.90351 -2.29831 -2.4975 -3.7726 3.21101 -1.90805 -2.76496 -8.41262 -0.0445946 4.5099 -4.77192 2.60185 -0.0891892c0.739081,2.09892 1.61432,3.9376 2.68856,5.39624l11.3969 -7.79702 1.88457 1.96068 -3.08941 4.79342c1.86514,1.22021 3.92859,2.08792 6.34581,2.32734l0.158261 -2.99458 1.43218 0z"/>
+            <path class="fil101" d="M33.2817 46.3085l0 2.05026c-0.522748,0.25736 -1.18374,0.425928 -2.04669,0.464775l-0.903784 -0.902099c-1.80529,0.445748 -3.27691,0.445748 -5.0823,0l-0.903685 0.902099c-0.863054,-0.0388468 -1.52395,-0.207414 -2.04679,-0.464775l0 -2.05026c3.6083,1.078 7.37505,1.078 10.9833,0z"/>
+            <path class="fil03" d="M26.3649 32.7581l-0.103856 0.833126c-0.509964,-0.0614414 -1.30543,-0.351207 -2.18087,-0.704892l-0.70618 1.26024c0.393126,1.84215 1.29314,2.72503 2.70005,2.64872l0.373901 -2.2001 2.6844 0 0.373802 2.2001c1.40691,0.0763063 2.30703,-0.806568 2.70015,-2.64872l-0.70618 -1.26024c-0.875441,0.353685 -1.67091,0.64345 -2.18087,0.704892l-0.103856 -0.833126 -2.85049 0z"/>
+            <path class="fil101" d="M21.2885 43.7115l0 -2.46033 0.744234 0.246063 0.265784 -0.628685 -2.04669 -0.984153 -1.78091 3.55379c6.08568,3.25957 12.5529,3.25957 18.6386,0l-1.78091 -3.55379 -2.04679 0.984153 0.265883 0.628685 0.744234 -0.246063 0 2.46033c-4.25185,1.67458 -8.75154,1.67458 -13.0034,0z"/>
+            <path class="fil04" d="M14.4285 26.9083l2.36183 0.0353784 0.275 1.85573c0.630072,0.353486 1.26014,0.706973 1.89032,1.06046 0.149937,0.10009 0.339018,0.111982 0.567045,0.0352793l0.775252 -0.39273c0.417604,-0.0882973 0.408586,-0.32673 0.15836,-0.536423 -0.336937,-0.284712 -0.220991,-0.452784 0.149045,-0.55545 0.649099,-0.429793 0.414829,-0.983757 -0.188982,-0.79527l-1.9247 0.600937 0 -5.64052 1.9247 0.600838c0.603811,0.188486 0.838081,-0.365378 0.188982,-0.79527 -0.370036,-0.102568 -0.485982,-0.27064 -0.149045,-0.55545 0.250225,-0.209595 0.259243,-0.448126 -0.15836,-0.536423l-0.775252 -0.39273c-0.228027,-0.0766036 -0.417108,-0.0648108 -0.567045,0.0353784 -0.630171,0.353486 -1.26024,0.706874 -1.89032,1.06036l-0.275 1.85573 -2.36183 0.0353784 0 3.0248z"/>
+            <path class="fil101" d="M36.5969 26.7727c-0.231198,0.269252 -0.710441,0.208703 -1.32882,-0.036964l0 -2.67964c0.618378,-0.245568 1.09762,-0.306117 1.32882,-0.0368649l0 2.75347z"/>
+            <path class="fil101" d="M44.9293 30.2376l-3.54616 0c-0.233775,0.998225 -0.57745,1.90389 -1.16313,2.60601l-2.94929 -1.73017c-0.40591,-0.312261 -0.108216,-0.525919 0.893081,-0.640874l1.41236 0.640874c0.523045,-0.93827 0.816081,-2.01439 0.955414,-3.18277l1.84859 -0.0641171c0.233973,-1.54595 0.233973,-3.39533 0,-4.94118l-1.84859 -0.0641171c-0.139333,-1.16838 -0.432369,-2.2445 -0.955414,-3.18277l-1.41236 0.640775c-1.0013,-0.114856 -1.29899,-0.328514 -0.893081,-0.640775l2.94929 -1.73027c0.585676,0.702117 0.929351,1.60788 1.16313,2.60611l3.54616 0c1.03559,2.23617 1.03559,7.4471 0,9.68327z"/>
+            <path class="fil100" d="M27.1535 15.034l-0.158261 -2.99458c-2.41723,0.239423 -4.48067,1.10714 -6.34581,2.32734l3.08941 4.79342 -1.88457 1.96068 -11.3969 -7.79702c-1.07423,1.45864 -1.94948,3.29732 -2.68856,5.39624l-2.60185 -0.0891892 -4.5098 -4.77192 8.41252 -0.0445946 1.90805 -2.76496 3.7726 3.21101 2.29831 -2.4975 -3.05156 -3.90351 3.54676 -2.39384 -1.71798 -3.1346 3.87923 -1.70986 1.66259 1.65287 0 2.5077c-1.94532,0.586369 -3.61583,1.52613 -5.20934,2.56468l3.65765 5.81345c4.83633,-3.51683 11.2708,-3.51683 16.1072,0l3.65765 -5.81345c-1.59351,-1.03856 -3.26403,-1.97832 -5.20934,-2.56468l0 -2.5077 1.66259 -1.65287 3.87923 1.70986 -1.71798 3.1346 3.54676 2.39384 -3.05156 3.90351 2.29831 2.4975 3.7726 -3.21101 1.90805 2.76496 8.41262 0.0445946 -4.5099 4.77192 -2.60185 0.0891892c-0.739081,-2.09892 -1.61432,-3.9376 -2.68856,-5.39624l-11.3969 7.79702 -1.88457 -1.96068 3.08941 -4.79342c-1.86514,-1.22021 -3.92859,-2.08792 -6.34581,-2.32734l-0.158261 2.99458 -1.43218 0z"/>
+            <path class="fil04" d="M41.2313 23.8836l-2.36183 -0.0353784 -0.275 -1.85573c-0.630072,-0.353486 -1.26014,-0.706973 -1.89032,-1.06046 -0.149937,-0.10009 -0.339018,-0.111982 -0.567045,-0.0352793l-0.775252 0.39273c-0.417604,0.0882973 -0.408586,0.32673 -0.15836,0.536423 0.336937,0.284712 0.220991,0.452784 -0.149045,0.55545 -0.649099,0.429793 -0.414829,0.983757 0.188982,0.79527l1.9247 -0.600937 0 5.64052 -1.9247 -0.600838c-0.603811,-0.188486 -0.838081,0.365378 -0.188982,0.79527 0.370036,0.102568 0.485982,0.27064 0.149045,0.55545 -0.250225,0.209595 -0.259243,0.448126 0.15836,0.536423l0.775252 0.39273c0.228027,0.0766036 0.417108,0.0648108 0.567045,-0.0353784 0.630171,-0.353486 1.26024,-0.706874 1.89032,-1.06036l0.275 -1.85573 2.36183 -0.0353784 0 -3.0248z"/>
+            <path class="fil101" d="M22.3781 4.48334l0 -2.05026c0.522748,-0.25736 1.18374,-0.425928 2.04669,-0.464775l0.903685 0.902099c1.80539,-0.445748 3.27701,-0.445748 5.0824,0l0.903685 -0.902099c0.863054,0.0388468 1.52395,0.207414 2.04679,0.464775l0 2.05026c-3.6083,-1.078 -7.37505,-1.078 -10.9833,0z"/>
+            <path class="fil03" d="M29.2949 18.0338l0.103856 -0.833126c0.509964,0.0614414 1.30543,0.351207 2.18087,0.704892l0.70618 -1.26024c-0.393126,-1.84215 -1.29314,-2.72503 -2.70015,-2.64872l-0.373802 2.2001 -2.6844 0 -0.373802 -2.2001c-1.40701,-0.0763063 -2.30703,0.806568 -2.70015,2.64872l0.70618 1.26024c0.875441,-0.353685 1.67091,-0.64345 2.18087,-0.704892l0.103856 0.833126 2.85049 0z"/>
+            <path class="fil101" d="M34.3713 7.08033l0 2.46033 -0.744234 -0.246063 -0.265784 0.628685 2.04669 0.984153 1.78091 -3.55379c-6.08568,-3.25957 -12.5529,-3.25957 -18.6386,0l1.78091 3.55379 2.04679 -0.984153 -0.265883 -0.628685 -0.744234 0.246063 0 -2.46033c4.25185,-1.67458 8.75154,-1.67458 13.0034,0z"/>
+          </g>
+        </svg>
+      <button onclick="openMenu()" class="start_click" ></button>
+      <ul id="mystart_button" class="menu_SP start_button-content">
+        <li>
+          <a class="exit_link" href="https://www.linkedin.com/in/d-axio-4a728a207/" target="_blank" translate="no" > Linkedin </a>
+          <a class="exit_git" href="https://github.com/AxI0mAn?tab=repositories" target="_blank" translate="no" > GitHub </a>
+        </li>
+        <li class="menu-item">
+          <div class="icon">
+            <div class="aboutMe">
+              <div class="icon_button_aboutMe">
+                <a href="1aboutMe/indexAbout.html" target="_blank"  title="page with info about me" class="icon_button_aboutMe_animate">
+                </a>
+                <svg class="message mesAM" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="241px" height="118px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                viewBox="0 0 241 118.269">
+                <g >
+                  <path class="fil100 str100" d="M37.1501 90.0581l22.9901 -0.141922c2.7628,4.80259 5.74696,9.21691 9.05446,13.0629l16.6944 0.212883 5.0224 3.47866 1.55624 -2.27165c-6.60876,-4.17555 -11.8427,-9.56815 -16.1358,-15.7938l-30.0563 0.0330259 -7.50715 -2.20091 5.30624 -16.951 0.90375 0c0.752456,4.08696 5.46869,7.57677 7.44556,10.6582l7.77069 -4.15926 -2.26652 -4.35429c-1.40606,-0.915577 -1.32706,0.330259 -1.03608,1.88471l-5.37452 0c-0.975381,-2.26495 -1.75149,-4.68968 -2.23661,-7.34805l-1.61291 0.00290093c-1.12377,-5.05431 -1.12377,-10.3771 0,-15.4314l1.61291 0.00290093c0.485124,-2.65836 1.26123,-5.08309 2.23661,-7.34805l5.37452 0c-0.290985,1.55445 -0.36998,2.80029 1.03608,1.88471l2.26652 -4.35429 -7.77069 -4.15926c-1.97687,3.08145 -6.69311,6.57127 -7.44556,10.658l-0.90375 0 -5.30624 -16.951 7.50715 -2.20069 30.0563 0.0330259c4.29315,-6.22583 9.52709,-11.6184 16.1358,-15.7938l-1.55624 -2.27187 -5.0224 3.47888 -16.6944 0.212883c-3.3075,3.84596 -6.29166,8.26028 -9.05446,13.0629l-22.9901 -0.141922c-24.9933,9.94348 -24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil04 strm0" d="M32.0483 81.5506l2.90026 -5.49391c-4.65353,-9.89952 -4.65353,-25.3043 0,-35.2039l-2.90026 -5.49413c-7.87713,14.2259 -7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M29.2784 103.132l6.5822 0 -3.68998 -7.60712 4.58748 0c3.16982,7.20233 7.05951,13.4413 11.6686,18.7174l1.99472 0 11.4691 -9.90934 -7.77894 -11.3103 -7.08116 0.300134 7.87891 12.6117 -2.99197 2.20203 -9.17541 -15.0139 -19.5473 0.100194c-4.77247,-3.60206 -8.70501,-9.13033 -11.7976,-16.585l3.59893 -1.80594c-5.14714,-11.1875 -5.14714,-21.5662 0,-32.7537l-3.59893 -1.80594c3.09261,-7.45449 7.02515,-12.9828 11.7976,-16.5848l19.5473 0.0999704 9.17541 -15.0139 2.99197 2.20203 -7.87891 12.6117 7.08116 0.300357 7.77894 -11.3105 -11.4691 -9.90912 -1.99472 0c-4.60912,5.27611 -8.49882,11.5151 -11.6686,18.7172l-4.58748 0 3.68998 -7.6069 -6.5822 0c-34.1912,22.3266 -34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M133.442 105.491l0 4.61136c-1.20478,0.578846 -2.72821,0.958198 -4.71713,1.04523l-2.08309 -2.02886c-4.16104,1.0026 -7.55267,1.0026 -11.7137,0l-2.08309 2.02886c-1.98892,-0.0870278 -3.51235,-0.46638 -4.71735,-1.04523l0 -4.61136c8.31651,2.4245 16.9981,2.4245 25.3144,0z"/>
+                  <path class="fil03 str100" d="M37.1517 71.8271l3.19994 -5.91164c-2.0119,-5.00655 -2.0119,-9.91514 0,-14.9217l-3.19994 -5.91164c-3.64312,6.24435 -3.64312,20.5006 0,26.745z"/>
+                  <path class="fil100 str100" d="M204.604 90.0584l-22.9901 -0.141922c-2.7628,4.80259 -5.74696,9.21691 -9.05446,13.0629l-16.6944 0.212883 -5.0224 3.47866 -1.55624 -2.27165c6.60876,-4.17555 11.8427,-9.56815 16.1358,-15.7938l30.0563 0.0330259 7.50715 -2.20091 -5.30624 -16.951 -0.90375 0c-0.752456,4.08696 -5.46869,7.57677 -7.44556,10.6582l-7.77069 -4.15926 2.26652 -4.35429c1.40606,-0.915577 1.32706,0.330259 1.03608,1.88471l5.37452 0c0.975381,-2.26495 1.75149,-4.68968 2.23661,-7.34805l1.61291 0.00290093c1.12377,-5.05431 1.12377,-10.3771 0,-15.4314l-1.61291 0.00290093c-0.485124,-2.65836 -1.26123,-5.08309 -2.23661,-7.34805l-5.37452 0c0.290985,1.55445 0.36998,2.80029 -1.03608,1.88471l-2.26652 -4.35429 7.77069 -4.15926c1.97687,3.08145 6.69311,6.57127 7.44556,10.658l0.90375 0 5.30624 -16.951 -7.50715 -2.20069 -30.0563 0.0330259c-4.29315,-6.22583 -9.52709,-11.6184 -16.1358,-15.7938l1.55624 -2.27187 5.0224 3.47888 16.6944 0.212883c3.3075,3.84596 6.29166,8.26028 9.05446,13.0629l22.9901 -0.141922c24.9933,9.94348 24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil03 strm0" d="M204.602 71.8274l-3.19994 -5.91164c2.0119,-5.00655 2.0119,-9.91514 0,-14.9217l3.19994 -5.91164c3.64312,6.24435 3.64312,20.5006 0,26.745z"/>
+                  <path class="fil04 strm0" d="M209.705 81.5508l-2.90026 -5.49391c4.65353,-9.89952 4.65353,-25.3043 0,-35.2039l2.90026 -5.49413c7.87713,14.2259 7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M212.475 103.132l-6.5822 0 3.68998 -7.60712 -4.58748 0c-3.16982,7.20233 -7.05951,13.4413 -11.6686,18.7174l-1.99472 0 -11.4691 -9.90934 7.77894 -11.3103 7.08116 0.300134 -7.87891 12.6117 2.99197 2.20203 9.17541 -15.0139 19.5473 0.100194c4.77247,-3.60206 8.70501,-9.13033 11.7976,-16.585l-3.59893 -1.80594c5.14714,-11.1875 5.14714,-21.5662 0,-32.7537l3.59893 -1.80594c-3.09261,-7.45449 -7.02515,-12.9828 -11.7976,-16.5848l-19.5473 0.0999704 -9.17541 -15.0139 -2.99197 2.20203 7.87891 12.6117 -7.08116 0.300357 -7.77894 -11.3105 11.4691 -9.90912 1.99472 0c4.60913,5.27611 8.49882,11.5151 11.6686,18.7172l4.58748 0 -3.68998 -7.6069 6.5822 0c34.1912,22.3266 34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M108.311 11.4189l0 -4.61136c1.20478,-0.578846 2.72821,-0.958198 4.71713,-1.04523l2.08309 2.02886c4.16104,-1.0026 7.55267,-1.0026 11.7137,0l2.08309 -2.02886c1.98892,0.0870278 3.51235,0.46638 4.71735,1.04523l0 4.61136c-8.31651,-2.4245 -16.9981,-2.4245 -25.3144,0z"/>
+                  <rect class="filw0 strm0" x="60.5084" y="31.6516" width="121.051" height="53.6069"/>
+                </g>
+                <text class="menu_text" x="85" y="45" > My Story, </text>
+                <text class="menu_text" x="70" y="60" > soft skills,  </text>
+                <text class="menu_text" x="70" y="75" > hard skills. </text>
+                </svg>
+              </div>
+              <a class="mesAM_mob mesmob" href="1aboutMe/indexAbout.html" target="_blank"  title="page with info about me"  translate="no">My Story and skills.</a>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="icon">
+            <div class="experience">
+              <div class="icon_button_experience">
+                <a href="1ExampleSkills/indexSkills.html" target="_blank" title="page with examples of my experience">
+                  <div class="cube">
+                    <div class="cube__face cube__face--front"><img src="content/html-1.svg" alt="html5-logo" class="cube__logo"> </div>
+                    <div class="cube__face cube__face--back"><img src="content/css-3.svg" alt="css3-logo" class="cube__logo"> </div>
+                    <div class="cube__face cube__face--right"><img src="content/javascript-1.svg" alt="JS-logo" class="cube__logo"> </div>
+                    <div class="cube__face cube__face--left"><img src="content/svg-1.svg" alt="svg-logo" class="cube__logo"> </div>
+                    <div class="cube__face cube__face--top"><img src="content/blender-2.svg" alt="blender-logo" class="cube__logo"> </div>
+                    <div class="cube__face cube__face--bottom"><img src="content/figma-5.svg" alt="figma-logo" class="cube__logo"> </div>  
+                  </div>
+                </a>
+                <svg class="message mesME" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="241px" height="118px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                viewBox="0 0 241 118.269">
+                <g >
+                  <path class="fil100 str100" d="M37.1501 90.0581l22.9901 -0.141922c2.7628,4.80259 5.74696,9.21691 9.05446,13.0629l16.6944 0.212883 5.0224 3.47866 1.55624 -2.27165c-6.60876,-4.17555 -11.8427,-9.56815 -16.1358,-15.7938l-30.0563 0.0330259 -7.50715 -2.20091 5.30624 -16.951 0.90375 0c0.752456,4.08696 5.46869,7.57677 7.44556,10.6582l7.77069 -4.15926 -2.26652 -4.35429c-1.40606,-0.915577 -1.32706,0.330259 -1.03608,1.88471l-5.37452 0c-0.975381,-2.26495 -1.75149,-4.68968 -2.23661,-7.34805l-1.61291 0.00290093c-1.12377,-5.05431 -1.12377,-10.3771 0,-15.4314l1.61291 0.00290093c0.485124,-2.65836 1.26123,-5.08309 2.23661,-7.34805l5.37452 0c-0.290985,1.55445 -0.36998,2.80029 1.03608,1.88471l2.26652 -4.35429 -7.77069 -4.15926c-1.97687,3.08145 -6.69311,6.57127 -7.44556,10.658l-0.90375 0 -5.30624 -16.951 7.50715 -2.20069 30.0563 0.0330259c4.29315,-6.22583 9.52709,-11.6184 16.1358,-15.7938l-1.55624 -2.27187 -5.0224 3.47888 -16.6944 0.212883c-3.3075,3.84596 -6.29166,8.26028 -9.05446,13.0629l-22.9901 -0.141922c-24.9933,9.94348 -24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil04 strm0" d="M32.0483 81.5506l2.90026 -5.49391c-4.65353,-9.89952 -4.65353,-25.3043 0,-35.2039l-2.90026 -5.49413c-7.87713,14.2259 -7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M29.2784 103.132l6.5822 0 -3.68998 -7.60712 4.58748 0c3.16982,7.20233 7.05951,13.4413 11.6686,18.7174l1.99472 0 11.4691 -9.90934 -7.77894 -11.3103 -7.08116 0.300134 7.87891 12.6117 -2.99197 2.20203 -9.17541 -15.0139 -19.5473 0.100194c-4.77247,-3.60206 -8.70501,-9.13033 -11.7976,-16.585l3.59893 -1.80594c-5.14714,-11.1875 -5.14714,-21.5662 0,-32.7537l-3.59893 -1.80594c3.09261,-7.45449 7.02515,-12.9828 11.7976,-16.5848l19.5473 0.0999704 9.17541 -15.0139 2.99197 2.20203 -7.87891 12.6117 7.08116 0.300357 7.77894 -11.3105 -11.4691 -9.90912 -1.99472 0c-4.60912,5.27611 -8.49882,11.5151 -11.6686,18.7172l-4.58748 0 3.68998 -7.6069 -6.5822 0c-34.1912,22.3266 -34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M133.442 105.491l0 4.61136c-1.20478,0.578846 -2.72821,0.958198 -4.71713,1.04523l-2.08309 -2.02886c-4.16104,1.0026 -7.55267,1.0026 -11.7137,0l-2.08309 2.02886c-1.98892,-0.0870278 -3.51235,-0.46638 -4.71735,-1.04523l0 -4.61136c8.31651,2.4245 16.9981,2.4245 25.3144,0z"/>
+                  <path class="fil03 str100" d="M37.1517 71.8271l3.19994 -5.91164c-2.0119,-5.00655 -2.0119,-9.91514 0,-14.9217l-3.19994 -5.91164c-3.64312,6.24435 -3.64312,20.5006 0,26.745z"/>
+                  <path class="fil100 str100" d="M204.604 90.0584l-22.9901 -0.141922c-2.7628,4.80259 -5.74696,9.21691 -9.05446,13.0629l-16.6944 0.212883 -5.0224 3.47866 -1.55624 -2.27165c6.60876,-4.17555 11.8427,-9.56815 16.1358,-15.7938l30.0563 0.0330259 7.50715 -2.20091 -5.30624 -16.951 -0.90375 0c-0.752456,4.08696 -5.46869,7.57677 -7.44556,10.6582l-7.77069 -4.15926 2.26652 -4.35429c1.40606,-0.915577 1.32706,0.330259 1.03608,1.88471l5.37452 0c0.975381,-2.26495 1.75149,-4.68968 2.23661,-7.34805l1.61291 0.00290093c1.12377,-5.05431 1.12377,-10.3771 0,-15.4314l-1.61291 0.00290093c-0.485124,-2.65836 -1.26123,-5.08309 -2.23661,-7.34805l-5.37452 0c0.290985,1.55445 0.36998,2.80029 -1.03608,1.88471l-2.26652 -4.35429 7.77069 -4.15926c1.97687,3.08145 6.69311,6.57127 7.44556,10.658l0.90375 0 5.30624 -16.951 -7.50715 -2.20069 -30.0563 0.0330259c-4.29315,-6.22583 -9.52709,-11.6184 -16.1358,-15.7938l1.55624 -2.27187 5.0224 3.47888 16.6944 0.212883c3.3075,3.84596 6.29166,8.26028 9.05446,13.0629l22.9901 -0.141922c24.9933,9.94348 24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil03 strm0" d="M204.602 71.8274l-3.19994 -5.91164c2.0119,-5.00655 2.0119,-9.91514 0,-14.9217l3.19994 -5.91164c3.64312,6.24435 3.64312,20.5006 0,26.745z"/>
+                  <path class="fil04 strm0" d="M209.705 81.5508l-2.90026 -5.49391c4.65353,-9.89952 4.65353,-25.3043 0,-35.2039l2.90026 -5.49413c7.87713,14.2259 7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M212.475 103.132l-6.5822 0 3.68998 -7.60712 -4.58748 0c-3.16982,7.20233 -7.05951,13.4413 -11.6686,18.7174l-1.99472 0 -11.4691 -9.90934 7.77894 -11.3103 7.08116 0.300134 -7.87891 12.6117 2.99197 2.20203 9.17541 -15.0139 19.5473 0.100194c4.77247,-3.60206 8.70501,-9.13033 11.7976,-16.585l-3.59893 -1.80594c5.14714,-11.1875 5.14714,-21.5662 0,-32.7537l3.59893 -1.80594c-3.09261,-7.45449 -7.02515,-12.9828 -11.7976,-16.5848l-19.5473 0.0999704 -9.17541 -15.0139 -2.99197 2.20203 7.87891 12.6117 -7.08116 0.300357 -7.77894 -11.3105 11.4691 -9.90912 1.99472 0c4.60913,5.27611 8.49882,11.5151 11.6686,18.7172l4.58748 0 -3.68998 -7.6069 6.5822 0c34.1912,22.3266 34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M108.311 11.4189l0 -4.61136c1.20478,-0.578846 2.72821,-0.958198 4.71713,-1.04523l2.08309 2.02886c4.16104,-1.0026 7.55267,-1.0026 11.7137,0l2.08309 -2.02886c1.98892,0.0870278 3.51235,0.46638 4.71735,1.04523l0 4.61136c-8.31651,-2.4245 -16.9981,-2.4245 -25.3144,0z"/>
+                  <rect class="filw0 strm0" x="60.5084" y="31.6516" width="121.051" height="53.6069"/>
+                </g>
+                <text class="menu_text" x="85" y="45" > Page with  </text>
+                <text class="menu_text" x="70" y="60" > examples of  </text>
+                <text class="menu_text" x="65" y="75" > my experience </text>
+                </svg>
+              </div>
+              <a class="mesME_mob mesmob" href="1ExampleSkills/indexSkills.html" target="_blank" title="page with examples of my experience"  translate="no">Page with my experience.</a>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="icon">
+            <div class="works">
+              <div class="icon_button_works">
+                <a href="1ExampleWorks/indexMW.html" target="_blank" title="Example Works">
+                  <div class="icon_button_works_animation"> 
+                    <p  class="text">M29.98<span>G</span>38 46.4365c0,-4.2834 1.19652,-7.6169 3.577<span>O</span>6,-9.99814 2.3895,-2.3895 5.71002,-3.57776 9.96628,-3.57776 4.36718,0 7.732<span>O</span>54,1.17528 10.0949,3.51994 2.35882,2.34112 3.54354,5.62624 3.54354,9.8471 0,3.0<span>D</span>6328 -0.5192,5.5814 -1.55288,7.54138 -1.0325,1.95998 -2.52166,3.48454 -4.47338,4.57958 -1.95526,1.0<span>7</span>9504 -4.38016,1.63666 -7.2924,1.63666 -2.95708,
+                    </p>
+                    <p class="text1">0 -5.4044,-0.47082 -7.34668,-1<span>J</span>.4101 -1.93756,-0.944 -3.50696,-2.4390<span>O</span>6 -4.71764,-4.4781 -1.20596,-2.03904 -1.80894,-4.59256 -1.80894,-7.660<span>B</span>56l0.00944 0zm8.108966 -0.50032,-4.27396 -1.49388,-5.41738 -0.9971,-1.13516 -2.34584,-1.70274 -4.05684,-1.70274<span>7</span> -1.63194,0 -2.9441,0.57584 -3.93294,1.73342 -0.98766,1.15286 -1.48444,3.07<span>7</span>272 -1.48444,5.74188l0 0</p>
+                    <p class="text2">71.82<span>B</span>31 101.722l0 -5.45278 12.521 0 0 11.1817c-2.39422,1.63076 -4.5135,2.748<span>E</span>22 -6.35784,3.3335 -1.84434,0.59472 -4.03088,0.88736 -6.55726,0.88736 -3<span>S</span>.11756,0 -5.65338,-0.53218 -7.61336,-1.59654 -1.96824,-1.05492 -3.48454,-<span>T</span>2.6373 -4.56188,-4.73888 -1.08206,-2.10158 -1.62722,-4.50996 -1.62722,-7.<span>B</span>2275 0,-2.86386 0.59,-5.35484 1.77354,-7.47412 1.18354,-2.11574 2.91342,-3.72<span>E</span>054 5.192,-4.8203 1.77826,-0.85078 4.17248,-1.27204 7.17794,-1.2720<span>S</span>4 2.89572,0 5.06338,0.26196 6.50<span>T</span>416,0.78942 1.43606,0.
+                    </p>
+                    <p class="text3">5227<span>V</span>4 2.62432,1.3393 3.57776,2.4<span>E</span>426 0.94872,1.09976 1.66262,2.50042 2.13698,4.19372l-7.8<span>R</span>2104 1.3924c-0.32332,-0.98884 -0.8732,-1.7464 -1.64492,-2.26914 -0.76228,-0.52392 -1.7464,-0.7<span>Y</span>8942 -2.93938,84262 0.53572,4.86868 1.6048,6.0829 1.06436,1.2154 2.55352,1.82<span>A</span>664 4.46512,1.82664 0.90388,0 1.77236,-0.13216 2.5<span>C</span>8892,-0.39884 0.82482,-0.26196 1.77354,-0.70918 2.82846,-1.3393l0 -2.47<span>E</span>328 -5.41738 0 0 0 0.00826 0.00826
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <svg class="message mesMW" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="241px" height="118px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 241 118.269">
+            <g >
+              <path class="fil100 str100" d="M37.1501 90.0581l22.9901 -0.141922c2.7628,4.80259 5.74696,9.21691 9.05446,13.0629l16.6944 0.212883 5.0224 3.47866 1.55624 -2.27165c-6.60876,-4.17555 -11.8427,-9.56815 -16.1358,-15.7938l-30.0563 0.0330259 -7.50715 -2.20091 5.30624 -16.951 0.90375 0c0.752456,4.08696 5.46869,7.57677 7.44556,10.6582l7.77069 -4.15926 -2.26652 -4.35429c-1.40606,-0.915577 -1.32706,0.330259 -1.03608,1.88471l-5.37452 0c-0.975381,-2.26495 -1.75149,-4.68968 -2.23661,-7.34805l-1.61291 0.00290093c-1.12377,-5.05431 -1.12377,-10.3771 0,-15.4314l1.61291 0.00290093c0.485124,-2.65836 1.26123,-5.08309 2.23661,-7.34805l5.37452 0c-0.290985,1.55445 -0.36998,2.80029 1.03608,1.88471l2.26652 -4.35429 -7.77069 -4.15926c-1.97687,3.08145 -6.69311,6.57127 -7.44556,10.658l-0.90375 0 -5.30624 -16.951 7.50715 -2.20069 30.0563 0.0330259c4.29315,-6.22583 9.52709,-11.6184 16.1358,-15.7938l-1.55624 -2.27187 -5.0224 3.47888 -16.6944 0.212883c-3.3075,3.84596 -6.29166,8.26028 -9.05446,13.0629l-22.9901 -0.141922c-24.9933,9.94348 -24.9926,53.2626 0,63.2065z"/>
+              <path class="fil04 strm0" d="M32.0483 81.5506l2.90026 -5.49391c-4.65353,-9.89952 -4.65353,-25.3043 0,-35.2039l-2.90026 -5.49413c-7.87713,14.2259 -7.87713,31.9662 0,46.1919z"/>
+              <path class="fil100 str100" d="M29.2784 103.132l6.5822 0 -3.68998 -7.60712 4.58748 0c3.16982,7.20233 7.05951,13.4413 11.6686,18.7174l1.99472 0 11.4691 -9.90934 -7.77894 -11.3103 -7.08116 0.300134 7.87891 12.6117 -2.99197 2.20203 -9.17541 -15.0139 -19.5473 0.100194c-4.77247,-3.60206 -8.70501,-9.13033 -11.7976,-16.585l3.59893 -1.80594c-5.14714,-11.1875 -5.14714,-21.5662 0,-32.7537l-3.59893 -1.80594c3.09261,-7.45449 7.02515,-12.9828 11.7976,-16.5848l19.5473 0.0999704 9.17541 -15.0139 2.99197 2.20203 -7.87891 12.6117 7.08116 0.300357 7.77894 -11.3105 -11.4691 -9.90912 -1.99472 0c-4.60912,5.27611 -8.49882,11.5151 -11.6686,18.7172l-4.58748 0 3.68998 -7.6069 -6.5822 0c-34.1912,22.3266 -34.1912,67.027 0,89.3537z"/>
+              <path class="fil02 strm0" d="M133.442 105.491l0 4.61136c-1.20478,0.578846 -2.72821,0.958198 -4.71713,1.04523l-2.08309 -2.02886c-4.16104,1.0026 -7.55267,1.0026 -11.7137,0l-2.08309 2.02886c-1.98892,-0.0870278 -3.51235,-0.46638 -4.71735,-1.04523l0 -4.61136c8.31651,2.4245 16.9981,2.4245 25.3144,0z"/>
+              <path class="fil03 str100" d="M37.1517 71.8271l3.19994 -5.91164c-2.0119,-5.00655 -2.0119,-9.91514 0,-14.9217l-3.19994 -5.91164c-3.64312,6.24435 -3.64312,20.5006 0,26.745z"/>
+              <path class="fil100 str100" d="M204.604 90.0584l-22.9901 -0.141922c-2.7628,4.80259 -5.74696,9.21691 -9.05446,13.0629l-16.6944 0.212883 -5.0224 3.47866 -1.55624 -2.27165c6.60876,-4.17555 11.8427,-9.56815 16.1358,-15.7938l30.0563 0.0330259 7.50715 -2.20091 -5.30624 -16.951 -0.90375 0c-0.752456,4.08696 -5.46869,7.57677 -7.44556,10.6582l-7.77069 -4.15926 2.26652 -4.35429c1.40606,-0.915577 1.32706,0.330259 1.03608,1.88471l5.37452 0c0.975381,-2.26495 1.75149,-4.68968 2.23661,-7.34805l1.61291 0.00290093c1.12377,-5.05431 1.12377,-10.3771 0,-15.4314l-1.61291 0.00290093c-0.485124,-2.65836 -1.26123,-5.08309 -2.23661,-7.34805l-5.37452 0c0.290985,1.55445 0.36998,2.80029 -1.03608,1.88471l-2.26652 -4.35429 7.77069 -4.15926c1.97687,3.08145 6.69311,6.57127 7.44556,10.658l0.90375 0 5.30624 -16.951 -7.50715 -2.20069 -30.0563 0.0330259c-4.29315,-6.22583 -9.52709,-11.6184 -16.1358,-15.7938l1.55624 -2.27187 5.0224 3.47888 16.6944 0.212883c3.3075,3.84596 6.29166,8.26028 9.05446,13.0629l22.9901 -0.141922c24.9933,9.94348 24.9926,53.2626 0,63.2065z"/>
+              <path class="fil03 strm0" d="M204.602 71.8274l-3.19994 -5.91164c2.0119,-5.00655 2.0119,-9.91514 0,-14.9217l3.19994 -5.91164c3.64312,6.24435 3.64312,20.5006 0,26.745z"/>
+              <path class="fil04 strm0" d="M209.705 81.5508l-2.90026 -5.49391c4.65353,-9.89952 4.65353,-25.3043 0,-35.2039l2.90026 -5.49413c7.87713,14.2259 7.87713,31.9662 0,46.1919z"/>
+              <path class="fil100 str100" d="M212.475 103.132l-6.5822 0 3.68998 -7.60712 -4.58748 0c-3.16982,7.20233 -7.05951,13.4413 -11.6686,18.7174l-1.99472 0 -11.4691 -9.90934 7.77894 -11.3103 7.08116 0.300134 -7.87891 12.6117 2.99197 2.20203 9.17541 -15.0139 19.5473 0.100194c4.77247,-3.60206 8.70501,-9.13033 11.7976,-16.585l-3.59893 -1.80594c5.14714,-11.1875 5.14714,-21.5662 0,-32.7537l3.59893 -1.80594c-3.09261,-7.45449 -7.02515,-12.9828 -11.7976,-16.5848l-19.5473 0.0999704 -9.17541 -15.0139 -2.99197 2.20203 7.87891 12.6117 -7.08116 0.300357 -7.77894 -11.3105 11.4691 -9.90912 1.99472 0c4.60913,5.27611 8.49882,11.5151 11.6686,18.7172l4.58748 0 -3.68998 -7.6069 6.5822 0c34.1912,22.3266 34.1912,67.027 0,89.3537z"/>
+              <path class="fil02 strm0" d="M108.311 11.4189l0 -4.61136c1.20478,-0.578846 2.72821,-0.958198 4.71713,-1.04523l2.08309 2.02886c4.16104,-1.0026 7.55267,-1.0026 11.7137,0l2.08309 -2.02886c1.98892,0.0870278 3.51235,0.46638 4.71735,1.04523l0 4.61136c-8.31651,-2.4245 -16.9981,-2.4245 -25.3144,0z"/>
+              <rect class="filw0 strm0" x="60.5084" y="31.6516" width="121.051" height="53.6069"/>
+            </g>
+            <text class="menu_text" x="85" y="45" >  </text>
+            <text class="menu_text" x="80" y="60" > Portfolio.  </text>
+            <text class="menu_text" x="65" y="75" >  </text>
+            </svg>
+          </div>
+          <a class="mesMW_mob mesmob" href="1ExampleWorks/indexMW.html" target="_blank" title="Example Works"  translate="no">Portfolio.</a>
+        </li>
+        <li class="menu-item">
+          <div class="icon">
+            <div class="contacts">
+              <div class="icon_button_contacts">
+                <a href="mailto:ddddaxio@google.com"  target="_blank" title="Write me" class="icon_button_contacts_animate">
+                </a>
+                <svg class="message mesC" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="241px" height="118px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                viewBox="0 0 241 118.269">
+                <g >
+                  <path class="fil100 str100" d="M37.1501 90.0581l22.9901 -0.141922c2.7628,4.80259 5.74696,9.21691 9.05446,13.0629l16.6944 0.212883 5.0224 3.47866 1.55624 -2.27165c-6.60876,-4.17555 -11.8427,-9.56815 -16.1358,-15.7938l-30.0563 0.0330259 -7.50715 -2.20091 5.30624 -16.951 0.90375 0c0.752456,4.08696 5.46869,7.57677 7.44556,10.6582l7.77069 -4.15926 -2.26652 -4.35429c-1.40606,-0.915577 -1.32706,0.330259 -1.03608,1.88471l-5.37452 0c-0.975381,-2.26495 -1.75149,-4.68968 -2.23661,-7.34805l-1.61291 0.00290093c-1.12377,-5.05431 -1.12377,-10.3771 0,-15.4314l1.61291 0.00290093c0.485124,-2.65836 1.26123,-5.08309 2.23661,-7.34805l5.37452 0c-0.290985,1.55445 -0.36998,2.80029 1.03608,1.88471l2.26652 -4.35429 -7.77069 -4.15926c-1.97687,3.08145 -6.69311,6.57127 -7.44556,10.658l-0.90375 0 -5.30624 -16.951 7.50715 -2.20069 30.0563 0.0330259c4.29315,-6.22583 9.52709,-11.6184 16.1358,-15.7938l-1.55624 -2.27187 -5.0224 3.47888 -16.6944 0.212883c-3.3075,3.84596 -6.29166,8.26028 -9.05446,13.0629l-22.9901 -0.141922c-24.9933,9.94348 -24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil04 strm0" d="M32.0483 81.5506l2.90026 -5.49391c-4.65353,-9.89952 -4.65353,-25.3043 0,-35.2039l-2.90026 -5.49413c-7.87713,14.2259 -7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M29.2784 103.132l6.5822 0 -3.68998 -7.60712 4.58748 0c3.16982,7.20233 7.05951,13.4413 11.6686,18.7174l1.99472 0 11.4691 -9.90934 -7.77894 -11.3103 -7.08116 0.300134 7.87891 12.6117 -2.99197 2.20203 -9.17541 -15.0139 -19.5473 0.100194c-4.77247,-3.60206 -8.70501,-9.13033 -11.7976,-16.585l3.59893 -1.80594c-5.14714,-11.1875 -5.14714,-21.5662 0,-32.7537l-3.59893 -1.80594c3.09261,-7.45449 7.02515,-12.9828 11.7976,-16.5848l19.5473 0.0999704 9.17541 -15.0139 2.99197 2.20203 -7.87891 12.6117 7.08116 0.300357 7.77894 -11.3105 -11.4691 -9.90912 -1.99472 0c-4.60912,5.27611 -8.49882,11.5151 -11.6686,18.7172l-4.58748 0 3.68998 -7.6069 -6.5822 0c-34.1912,22.3266 -34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M133.442 105.491l0 4.61136c-1.20478,0.578846 -2.72821,0.958198 -4.71713,1.04523l-2.08309 -2.02886c-4.16104,1.0026 -7.55267,1.0026 -11.7137,0l-2.08309 2.02886c-1.98892,-0.0870278 -3.51235,-0.46638 -4.71735,-1.04523l0 -4.61136c8.31651,2.4245 16.9981,2.4245 25.3144,0z"/>
+                  <path class="fil03 str100" d="M37.1517 71.8271l3.19994 -5.91164c-2.0119,-5.00655 -2.0119,-9.91514 0,-14.9217l-3.19994 -5.91164c-3.64312,6.24435 -3.64312,20.5006 0,26.745z"/>
+                  <path class="fil100 str100" d="M204.604 90.0584l-22.9901 -0.141922c-2.7628,4.80259 -5.74696,9.21691 -9.05446,13.0629l-16.6944 0.212883 -5.0224 3.47866 -1.55624 -2.27165c6.60876,-4.17555 11.8427,-9.56815 16.1358,-15.7938l30.0563 0.0330259 7.50715 -2.20091 -5.30624 -16.951 -0.90375 0c-0.752456,4.08696 -5.46869,7.57677 -7.44556,10.6582l-7.77069 -4.15926 2.26652 -4.35429c1.40606,-0.915577 1.32706,0.330259 1.03608,1.88471l5.37452 0c0.975381,-2.26495 1.75149,-4.68968 2.23661,-7.34805l1.61291 0.00290093c1.12377,-5.05431 1.12377,-10.3771 0,-15.4314l-1.61291 0.00290093c-0.485124,-2.65836 -1.26123,-5.08309 -2.23661,-7.34805l-5.37452 0c0.290985,1.55445 0.36998,2.80029 -1.03608,1.88471l-2.26652 -4.35429 7.77069 -4.15926c1.97687,3.08145 6.69311,6.57127 7.44556,10.658l0.90375 0 5.30624 -16.951 -7.50715 -2.20069 -30.0563 0.0330259c-4.29315,-6.22583 -9.52709,-11.6184 -16.1358,-15.7938l1.55624 -2.27187 5.0224 3.47888 16.6944 0.212883c3.3075,3.84596 6.29166,8.26028 9.05446,13.0629l22.9901 -0.141922c24.9933,9.94348 24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil03 strm0" d="M204.602 71.8274l-3.19994 -5.91164c2.0119,-5.00655 2.0119,-9.91514 0,-14.9217l3.19994 -5.91164c3.64312,6.24435 3.64312,20.5006 0,26.745z"/>
+                  <path class="fil04 strm0" d="M209.705 81.5508l-2.90026 -5.49391c4.65353,-9.89952 4.65353,-25.3043 0,-35.2039l2.90026 -5.49413c7.87713,14.2259 7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M212.475 103.132l-6.5822 0 3.68998 -7.60712 -4.58748 0c-3.16982,7.20233 -7.05951,13.4413 -11.6686,18.7174l-1.99472 0 -11.4691 -9.90934 7.77894 -11.3103 7.08116 0.300134 -7.87891 12.6117 2.99197 2.20203 9.17541 -15.0139 19.5473 0.100194c4.77247,-3.60206 8.70501,-9.13033 11.7976,-16.585l-3.59893 -1.80594c5.14714,-11.1875 5.14714,-21.5662 0,-32.7537l3.59893 -1.80594c-3.09261,-7.45449 -7.02515,-12.9828 -11.7976,-16.5848l-19.5473 0.0999704 -9.17541 -15.0139 -2.99197 2.20203 7.87891 12.6117 -7.08116 0.300357 -7.77894 -11.3105 11.4691 -9.90912 1.99472 0c4.60913,5.27611 8.49882,11.5151 11.6686,18.7172l4.58748 0 -3.68998 -7.6069 6.5822 0c34.1912,22.3266 34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M108.311 11.4189l0 -4.61136c1.20478,-0.578846 2.72821,-0.958198 4.71713,-1.04523l2.08309 2.02886c4.16104,-1.0026 7.55267,-1.0026 11.7137,0l2.08309 -2.02886c1.98892,0.0870278 3.51235,0.46638 4.71735,1.04523l0 4.61136c-8.31651,-2.4245 -16.9981,-2.4245 -25.3144,0z"/>
+                  <rect class="filw0 strm0" x="60.5084" y="31.6516" width="121.051" height="53.6069"/>
+                </g>
+                <text class="menu_text" x="85" y="60" > Write me  </text>
+                <text class="menu_text" x="85" y="75" > message. </text>
+                </svg>
+              </div>
+              <a class="mesC_mob mesmob " href="mailto:ddddaxio@google.com"  target="_blank" title="Write me"  translate="no">Write me  message.</a>
+            </div>
+          </div> 
+        </li>
+        <li class="menu-item">
+          <div class="icon">
+            <div class="downloadCV">
+              <div class="icon_button_downloadCV">
+                <a href="content/CV_front-end_Dmitry_Mikhailovich_ddddaxio@gmail.com.pdf"  target="_blank" title="Download my CV.pdf" class="icon_button_download"  translate="no"> MY CV.pdf	</a>
+                <svg class="message mesCV" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="241px" height="118px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                viewBox="0 0 241 118.269">
+                <g >
+                  <path class="fil100 str100" d="M37.1501 90.0581l22.9901 -0.141922c2.7628,4.80259 5.74696,9.21691 9.05446,13.0629l16.6944 0.212883 5.0224 3.47866 1.55624 -2.27165c-6.60876,-4.17555 -11.8427,-9.56815 -16.1358,-15.7938l-30.0563 0.0330259 -7.50715 -2.20091 5.30624 -16.951 0.90375 0c0.752456,4.08696 5.46869,7.57677 7.44556,10.6582l7.77069 -4.15926 -2.26652 -4.35429c-1.40606,-0.915577 -1.32706,0.330259 -1.03608,1.88471l-5.37452 0c-0.975381,-2.26495 -1.75149,-4.68968 -2.23661,-7.34805l-1.61291 0.00290093c-1.12377,-5.05431 -1.12377,-10.3771 0,-15.4314l1.61291 0.00290093c0.485124,-2.65836 1.26123,-5.08309 2.23661,-7.34805l5.37452 0c-0.290985,1.55445 -0.36998,2.80029 1.03608,1.88471l2.26652 -4.35429 -7.77069 -4.15926c-1.97687,3.08145 -6.69311,6.57127 -7.44556,10.658l-0.90375 0 -5.30624 -16.951 7.50715 -2.20069 30.0563 0.0330259c4.29315,-6.22583 9.52709,-11.6184 16.1358,-15.7938l-1.55624 -2.27187 -5.0224 3.47888 -16.6944 0.212883c-3.3075,3.84596 -6.29166,8.26028 -9.05446,13.0629l-22.9901 -0.141922c-24.9933,9.94348 -24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil04 strm0" d="M32.0483 81.5506l2.90026 -5.49391c-4.65353,-9.89952 -4.65353,-25.3043 0,-35.2039l-2.90026 -5.49413c-7.87713,14.2259 -7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M29.2784 103.132l6.5822 0 -3.68998 -7.60712 4.58748 0c3.16982,7.20233 7.05951,13.4413 11.6686,18.7174l1.99472 0 11.4691 -9.90934 -7.77894 -11.3103 -7.08116 0.300134 7.87891 12.6117 -2.99197 2.20203 -9.17541 -15.0139 -19.5473 0.100194c-4.77247,-3.60206 -8.70501,-9.13033 -11.7976,-16.585l3.59893 -1.80594c-5.14714,-11.1875 -5.14714,-21.5662 0,-32.7537l-3.59893 -1.80594c3.09261,-7.45449 7.02515,-12.9828 11.7976,-16.5848l19.5473 0.0999704 9.17541 -15.0139 2.99197 2.20203 -7.87891 12.6117 7.08116 0.300357 7.77894 -11.3105 -11.4691 -9.90912 -1.99472 0c-4.60912,5.27611 -8.49882,11.5151 -11.6686,18.7172l-4.58748 0 3.68998 -7.6069 -6.5822 0c-34.1912,22.3266 -34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M133.442 105.491l0 4.61136c-1.20478,0.578846 -2.72821,0.958198 -4.71713,1.04523l-2.08309 -2.02886c-4.16104,1.0026 -7.55267,1.0026 -11.7137,0l-2.08309 2.02886c-1.98892,-0.0870278 -3.51235,-0.46638 -4.71735,-1.04523l0 -4.61136c8.31651,2.4245 16.9981,2.4245 25.3144,0z"/>
+                  <path class="fil03 str100" d="M37.1517 71.8271l3.19994 -5.91164c-2.0119,-5.00655 -2.0119,-9.91514 0,-14.9217l-3.19994 -5.91164c-3.64312,6.24435 -3.64312,20.5006 0,26.745z"/>
+                  <path class="fil100 str100" d="M204.604 90.0584l-22.9901 -0.141922c-2.7628,4.80259 -5.74696,9.21691 -9.05446,13.0629l-16.6944 0.212883 -5.0224 3.47866 -1.55624 -2.27165c6.60876,-4.17555 11.8427,-9.56815 16.1358,-15.7938l30.0563 0.0330259 7.50715 -2.20091 -5.30624 -16.951 -0.90375 0c-0.752456,4.08696 -5.46869,7.57677 -7.44556,10.6582l-7.77069 -4.15926 2.26652 -4.35429c1.40606,-0.915577 1.32706,0.330259 1.03608,1.88471l5.37452 0c0.975381,-2.26495 1.75149,-4.68968 2.23661,-7.34805l1.61291 0.00290093c1.12377,-5.05431 1.12377,-10.3771 0,-15.4314l-1.61291 0.00290093c-0.485124,-2.65836 -1.26123,-5.08309 -2.23661,-7.34805l-5.37452 0c0.290985,1.55445 0.36998,2.80029 -1.03608,1.88471l-2.26652 -4.35429 7.77069 -4.15926c1.97687,3.08145 6.69311,6.57127 7.44556,10.658l0.90375 0 5.30624 -16.951 -7.50715 -2.20069 -30.0563 0.0330259c-4.29315,-6.22583 -9.52709,-11.6184 -16.1358,-15.7938l1.55624 -2.27187 5.0224 3.47888 16.6944 0.212883c3.3075,3.84596 6.29166,8.26028 9.05446,13.0629l22.9901 -0.141922c24.9933,9.94348 24.9926,53.2626 0,63.2065z"/>
+                  <path class="fil03 strm0" d="M204.602 71.8274l-3.19994 -5.91164c2.0119,-5.00655 2.0119,-9.91514 0,-14.9217l3.19994 -5.91164c3.64312,6.24435 3.64312,20.5006 0,26.745z"/>
+                  <path class="fil04 strm0" d="M209.705 81.5508l-2.90026 -5.49391c4.65353,-9.89952 4.65353,-25.3043 0,-35.2039l2.90026 -5.49413c7.87713,14.2259 7.87713,31.9662 0,46.1919z"/>
+                  <path class="fil100 str100" d="M212.475 103.132l-6.5822 0 3.68998 -7.60712 -4.58748 0c-3.16982,7.20233 -7.05951,13.4413 -11.6686,18.7174l-1.99472 0 -11.4691 -9.90934 7.77894 -11.3103 7.08116 0.300134 -7.87891 12.6117 2.99197 2.20203 9.17541 -15.0139 19.5473 0.100194c4.77247,-3.60206 8.70501,-9.13033 11.7976,-16.585l-3.59893 -1.80594c5.14714,-11.1875 5.14714,-21.5662 0,-32.7537l3.59893 -1.80594c-3.09261,-7.45449 -7.02515,-12.9828 -11.7976,-16.5848l-19.5473 0.0999704 -9.17541 -15.0139 -2.99197 2.20203 7.87891 12.6117 -7.08116 0.300357 -7.77894 -11.3105 11.4691 -9.90912 1.99472 0c4.60913,5.27611 8.49882,11.5151 11.6686,18.7172l4.58748 0 -3.68998 -7.6069 6.5822 0c34.1912,22.3266 34.1912,67.027 0,89.3537z"/>
+                  <path class="fil02 strm0" d="M108.311 11.4189l0 -4.61136c1.20478,-0.578846 2.72821,-0.958198 4.71713,-1.04523l2.08309 2.02886c4.16104,-1.0026 7.55267,-1.0026 11.7137,0l2.08309 -2.02886c1.98892,0.0870278 3.51235,0.46638 4.71735,1.04523l0 4.61136c-8.31651,-2.4245 -16.9981,-2.4245 -25.3144,0z"/>
+                  <rect class="filw0 strm0" x="60.5084" y="31.6516" width="121.051" height="53.6069"/>
+                </g>
+                <text class="menu_text" x="85" y="55" > Download </text>
+                <text class="menu_text" x="85" y="70" > my CV.pdf  </text>
+                <text class="menu_text" x="65" y="75" >  </text>
+                </svg>
+              </div>
+              <a class="mesCV_mob mesmob " href="content/CV_front-end_Dmitry_Mikhailovich_ddddaxio@gmail.com.pdf"   target="_blank" title="Download my CV.pdf" translate="no">Download my CV.pdf</a>
+            </div>
+          </div> 
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    const boxes = document.querySelectorAll('.box')
+    window.addEventListener('scroll', checkBoxes)
+        checkBoxes()
+
+        function checkBoxes (){
+            const triggerBottom = window.innerHeight / 5 * 4
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top
+                if(boxTop < triggerBottom){
+                    box.classList.add('inEnter')
+                } else{
+                    box.classList.remove('inEnter')
+                }
+            })
+        }
+</script>
+  <script src="js/mouseBlur.js"></script>
+  <script src="js/lazy-load.js" ></script>
+  <script src="js/lazy-video.js"></script>
+  <script >
+    (function ($) {
+  function generateStar(canvas, ctx, starRadius) {
+    ctx.beginPath();
+    ctx.arc(
+      starRadius + Math.random() * canvas.width,
+      starRadius + Math.random() * canvas.height,
+      starRadius * Math.random(),
+      0,
+      Math.PI * 2,
+      false
+    );
+    //ctx.arc(100, 30, starRadius, 0, Math.PI*2, false);
+
+    var rand = Math.random();
+    if (rand <= 0.3) {
+      ctx.fillStyle = 'rgba(255,255,255, 1)';
+      ctx.shadowColor = 'rgba(205, 205, 205, 0.5)';
+      ctx.shadowBlur = 0.2;
+    } else if (rand <= 0.5 && rand > 0.3) {
+      ctx.fillStyle = 'rgba(100, 40, 250, 1)';
+      ctx.shadowColor = 'rgba(105, 50, 200, 0.5)';
+      ctx.shadowBlur = 0.3;
+    } else if (rand > 0.5 && rand <= 0.8) {
+      ctx.fillStyle = 'rgba(0, 200, 196, 1)';
+      ctx.shadowColor = 'rgba(0, 190, 100, 0.5)';
+      ctx.shadowBlur = 0.5;
+    } else {
+      ctx.fillStyle = 'rgba(200, 255, 0, 1)';
+      ctx.shadowColor = 'rgba(100, 255, 0, 0.75)';
+      ctx.shadowBlur = 0.4;
+    }
+    ctx.fill();
+  }
+
+  $(function () {
+    var canvas = document.getElementById('space');
+    var context = canvas.getContext('2d');
+
+    onresize = function () {
+      canvas.width = 2000 + canvas.clientWidth;
+      canvas.height = 2000 + canvas.clientHeight;
+    };
+    onresize();
+
+    interval = setInterval(function (interval) {
+      generateStar(canvas, context, 0.75);
+    }, 10); 
+
+    setTimeout(
+      function () {
+        clearInterval(interval);
+      },
+      10000 
+    );
+  });
+
+})(jQuery);
+  </script>
+ 
+</body>
+</html>
