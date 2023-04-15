@@ -1082,6 +1082,13 @@ header {
   }
 }
 
+@media screen and (max-width: 500px) {
+  header {
+    margin-left: 25vw;
+    width: 60vw;
+  }
+}
+
 h1 {
   grid-area: h1;
   color: rgb(0, 233, 33);
