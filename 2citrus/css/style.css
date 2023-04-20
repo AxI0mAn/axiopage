@@ -359,26 +359,19 @@ h3:hover {
   background-position: center top;
 }
 
-.card__h2, b, strong {
+.card__header {
   font-size: large;
   text-align: center;
   padding: 10px;
-}
-
-strong {
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
 }
 
 .card__description {
-  padding: 15px;
   font-size: medium;
   text-align: center;
-}
-.card__description b {
-  font-size: medium;
   font-style: normal;
-  padding: 10px 0;
+  padding: 15px;
 }
 
 .card__text {
