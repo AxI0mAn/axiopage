@@ -367,6 +367,10 @@ h3:hover {
   font-weight: 600;
 }
 
+strong{
+  font-size: x-large;
+}
+
 .card__description {
   font-size: medium;
   text-align: center;
